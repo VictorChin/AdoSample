@@ -22,7 +22,7 @@ namespace ConsoleApplication1
             conn.Open();
             adapter.Fill(ds.Products);
             ds.Products.AddProductsRow("Pen", "Pen with A Man", "Stationery", 12.50M);
-            ds.WriteXml(@"C:\Lab\Products.xml",System.Data.XmlWriteMode.DiffGram);
+            ds.WriteXml(@"C:\Lab\Products2.xml",System.Data.XmlWriteMode.DiffGram);
             adapter.Update(ds.Products);
             conn.Close();
             conn.Dispose();
